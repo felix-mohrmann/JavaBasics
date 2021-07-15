@@ -1,6 +1,6 @@
 package felix.fische.app;
 
-public class App {
+public class Calculations {
     public static void main(String[] args) {
         int x = 10;
         int y = 90;
