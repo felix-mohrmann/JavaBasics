@@ -2,9 +2,9 @@ package felix.fische.week2;
 
 public class Student {
 
-    private String name = "Paul";
-    private int age = 20;
-    private boolean accepted = true;
+    private String name;
+    private int age;
+    private boolean accepted;
 
     public String getName() {
         return name;

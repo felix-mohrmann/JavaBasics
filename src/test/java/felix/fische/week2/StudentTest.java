@@ -30,8 +30,9 @@ class StudentTest {
         //then
         assertEquals(10, actual);
     }
+
     @Test
-    @DisplayName("get & set from Accepted")
+    @DisplayName("get & set from accepted")
     public void checkAccepted() {
         //given
         Student student = new Student();
@@ -39,6 +40,6 @@ class StudentTest {
         //when
         boolean actual = student.isAccepted();
         //then
-        assertEquals(true, actual);
+        assertTrue(actual);
     }
 }
