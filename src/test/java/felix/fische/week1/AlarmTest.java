@@ -10,7 +10,7 @@ class AlarmTest {
     public void checkRed0() {
         //given
         String threadLevel = "red";
-        int amountOfPeople = 0;
+        int amountOfPeople = 1;
         //when
         String actual = Alarm.checkPeople(threadLevel, amountOfPeople);
         //then
