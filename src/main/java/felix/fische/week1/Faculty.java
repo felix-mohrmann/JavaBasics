@@ -1,4 +1,4 @@
-package felix.fische.app;
+package felix.fische.week1;
 
 
 public class Faculty {
