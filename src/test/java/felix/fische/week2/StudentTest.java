@@ -42,4 +42,15 @@ class StudentTest {
         //then
         assertTrue(actual);
     }
+
+    @Test
+    @DisplayName("returns full student info")
+    public void checkInfo(){
+        //given
+        Student student = new Student("Max", 20, true);
+        //when
+        String fullInfo = student.toString();
+        //then
+        assertEquals("Max 20 true", fullInfo);
+    }
 }

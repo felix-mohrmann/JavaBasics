@@ -6,6 +6,20 @@ public class Student {
     private int age;
     private boolean accepted;
 
+    public Student() {
+
+    }
+
+    public Student(String name, int age, boolean accepted) {
+        this.name = name;
+        this.age = age;
+        this.accepted = accepted;
+    }
+
+    public String toString() {
+        return name + " " + age + " " + accepted;
+    }
+
     public String getName() {
         return name;
     }
