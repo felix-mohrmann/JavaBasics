@@ -53,4 +53,27 @@ class StudentTest {
         //then
         assertEquals("Max 20 true", fullInfo);
     }
+
+    @Test
+    @DisplayName("student1 should be equal to student2")
+    public void checkIfObjectsEqual(){
+        //given
+        Student student1 = new Student("Max", 21, true);
+        Student student2 = new Student("Max", 20, true);
+        //when
+        boolean expected = student1.equals(student2);
+        //then
+        assertTrue(expected);
+    }
+    @Test
+    @DisplayName("student1 should not be equal to student2")
+    public void checkIfObjectsNotEqual(){
+        //given
+        Student student1 = new Student("Florian", 21, true);
+        Student student2 = new Student("Max", 20, true);
+        //when
+        boolean expected = student1.equals(student2);
+        //then
+        assertFalse(expected);
+    }
 }
